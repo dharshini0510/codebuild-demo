@@ -1,9 +1,26 @@
 version: 0.2
 
+# phases:
+#   build:
+#     commands:
+#       - echo "Practicing CodeBuild"
+#       - echo "Example for CodeBuild - buildspec file"
+#       - node --version
+#       - npm --version
+
 phases:
+  install:
+    commands:
+      - echo "Example for INSTALL phase"
+
+  pre_build:
+    commands:
+      - echo "Example for PRE_BUILD phase"
+
   build:
     commands:
-      - echo "Practicing CodeBuild"
-      - echo "Example for CodeBuild - buildspec file"
-      - node --version
-      - npm --version
+      - echo "Example for BUILD phase"
+
+  post_build:
+    commands:
+      - echo "Example for POST_BUILD phase"
