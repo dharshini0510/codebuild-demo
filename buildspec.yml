@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Practicing CodeBuild"
+      - echo "Example for CodeBuild - buildspec file"
+      - node --version
+      - npm --version
