@@ -49,6 +49,9 @@ phases:
       - echo "Source Directory - $CODEBUILD_SRC_DIR"
       - echo "Source Version - $CODEBUILD_SOURCE_VERSION"
       - echo "AWS Region - $AWS_REGION"
+    
+    finally:
+      - echo "Finally command executed"
 
   post_build:
     commands:
