@@ -19,28 +19,28 @@ phases:
 
   build:
     commands:
-      - echo "PRACTICE BUILDSPEC FILE:"
+      - echo "PRACTICE BUILDSPEC FILE"
       - echo "Example for CodeBuild - buildspec file"
       - node --version
       - npm --version
 
-      - echo "PRACTICE LIFECYCLE PHASES:"
+      - echo "PRACTICE LIFECYCLE PHASES"
       - echo "Example for BUILD phase"
 
-      - echo "PRACTICE MULTIPLE COMMAND LINES:"
+      - echo "PRACTICE MULTIPLE COMMAND LINES"
       - echo "Command 1"
       - echo "Command 2"
       - echo "Command 3"
       - echo "Command 4"
 
-      - echo "PRACTICE RUNTIME VERSIONS:"
+      - echo "PRACTICE RUNTIME VERSIONS"
       - echo "Checking Node.js version"
       - node --version
       - npm --version
 
-      - echo "PRACTICE ENV VARIABLES:"
-      - echo "Application: $APP_NAME"
-      - echo "Environment: $APP_ENV"
+      - echo "PRACTICE ENV VARIABLES"
+      - echo "Application - $APP_NAME"
+      - echo "Environment - $APP_ENV"
 
   post_build:
     commands:
