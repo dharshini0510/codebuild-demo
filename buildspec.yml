@@ -8,6 +8,8 @@ version: 0.2
 #       - node --version
 #       - npm --version
 
+
+
 # phases:
 #   install:
 #     commands:
@@ -25,10 +27,27 @@ version: 0.2
 #     commands:
 #       - echo "Example for POST_BUILD phase"
 
+
+
+# phases:
+#   build:
+#     commands:
+#       - echo "Command 1"
+#       - echo "Command 2"
+#       - echo "Command 3"
+#       - echo "Command 4"
+
+
+
 phases:
+  install:
+    runtime-versions:
+      nodejs: 22
+    commands:
+      - echo "Node.js runtime configured"
+
   build:
     commands:
-      - echo "Command 1"
-      - echo "Command 2"
-      - echo "Command 3"
-      - echo "Command 4"
+      - echo "Checking Node.js version"
+      - node --version
+      - npm --version
