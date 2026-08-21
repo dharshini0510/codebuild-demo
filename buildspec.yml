@@ -55,6 +55,11 @@ phases:
       - mkdir output
       - echo "Example for CodeBuild artifact" > output/message.txt
       - echo "Artifact file created"
+      - echo "Checking output directory"
+      - ls -la
+      - echo "Checking output folder"
+      - ls -la output
+      - echo "Checking message.txt"
       - cat output/message.txt
     
     finally:
