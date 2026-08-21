@@ -31,7 +31,7 @@ phases:
       - echo "Command 1"
       - echo "Command 2"
       - echo "Command 3"
-      - invalid commands
+      # - invalid commands
       - echo "Command 4"
 
       - echo "PRACTICE RUNTIME VERSIONS"
