@@ -42,6 +42,13 @@ phases:
       - echo "Application - $APP_NAME"
       - echo "Environment - $APP_ENV"
 
+      - echo "PRACTICE CODEBUILD ENV VARIABLES:"
+      - echo "Build ID - $CODEBUILD_BUILD_ID"
+      - echo "Build Number - $CODEBUILD_BUILD_NUMBER"
+      - echo "Source Directory - $CODEBUILD_SRC_DIR"
+      - echo "Source Version - $CODEBUILD_SOURCE_VERSION"
+      - echo "AWS Region - $AWS_REGION"
+
   post_build:
     commands:
       - echo "Example for POST_BUILD phase"
