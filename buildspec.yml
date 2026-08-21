@@ -39,15 +39,28 @@ version: 0.2
 
 
 
-phases:
-  install:
-    runtime-versions:
-      nodejs: 22
-    commands:
-      - echo "Node.js runtime configured"
+# phases:
+#   install:
+#     runtime-versions:
+#       nodejs: 22
+#     commands:
+#       - echo "Node.js runtime configured"
 
+#   build:
+#     commands:
+#       - echo "Checking Node.js version"
+#       - node --version
+#       - npm --version
+
+
+
+env:
+  variables:
+    APP_ENV: local
+    APP_NAME: codebuild-practice
+
+phases:
   build:
     commands:
-      - echo "Checking Node.js version"
-      - node --version
-      - npm --version
+      - echo "Application: $APP_NAME"
+      - echo "Environment: $APP_ENV"
